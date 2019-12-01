@@ -1,7 +1,7 @@
 .Header {
   background-color: #282c34;
   height: 150px;
-  padding: 20px;
+  padding: 30px;
   color: white;
   text-align: center;
 }
@@ -14,4 +14,15 @@
 @keyframes App-logon-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.Menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Menu li {
+  display: inline-block;
+  padding-right: 10px;
 }

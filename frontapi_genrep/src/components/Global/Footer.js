@@ -1,12 +1,23 @@
+//Dependencies
 import React, { Component } from 'react';
+import PropTypes from  'prop-types';
+
+//Assets
 import './css/Footer.css';
 
-function Footer(){
-  return (
-    <div className="Footer">
-      <p>Footer - Copyright</p>
-    </div>
-  );
+class Footer extends Component{
+  static propTypes = {
+    copyright: PropTypes.string
+  };
+   render(){
+     const { copyright = '&copy; Derechos Reservados'} = this.props;
+    return (
+      <div className="Footer">
+   <p dangerouslySetInnerHTML={{__html: copyright}}/>
+      </div>
+    );
+   };
 }
+
 
 export default Footer;

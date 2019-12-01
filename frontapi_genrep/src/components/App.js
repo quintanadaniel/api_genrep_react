@@ -6,12 +6,15 @@ import Header from './Global/Header';
 import Content from './Global/Content';
 import Footer from './Global/Footer';
 
+//Data
+import items from '../data/menu';
+
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header title="PruebaDani" items={items} />
       <Content />
-      <Footer />
+      <Footer copyright="&copy; Derechos Reservados Makro"/>
     </div>
   );
 }
